@@ -3,64 +3,77 @@
 
 <head>
   <title> Portfolio Gallery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-  <nav>
-    <div id="nameplate">
-      <h1>Jennifer Ihnacik</h1>
-    </div>
-    <div id="links">
-      <ul>
-        <li><a href="#">Contact </a></li>
-        <li> | </li>
-        <li><a href="#">Portfolio </a></li>
-        <li> | </li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </div>
-  </nav>
+  <container id="navigation-contents">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Jennifer Ihnacik</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="container">
-    <div class="uppercontainer">
-      <h2>Portfolio</h2>
-    </div>
-
-    <div class="grid-container">
-      <div id="project1">
-        <img class="project-thumbnail" src="assets/images/project1.jpeg">
-        <p class="projectlabel">
-          Project One
-        </p>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
       </div>
+      </li>
+      </ul>
+      </div>
+    </nav>
+  </container>
 
-      <div id="project2">
-        <img class="project-thumbnail" src="assets/images/project2.jpeg">
-        <p class="projectlabel">
+  <div id="main-container" class="container">
+      <section class="main-section">
+        <h1>Portfolio</h1>
+        <div class="work "col-sm-12 col-med-6 col-lg-4 col-xl-3 id="project1">
+          <img class="project-thumbnail" src="assets/images/project1.jpeg">
+          <p class="projectlabel">
+            Project One
+          </p>
+        </div>
+
+        <div class = "col-sm-12 col-med-6 col-lg-4 col-xl-3" id="project2">
+          <img class="project-thumbnail" src="assets/images/project2.jpeg">
+          <p class="projectlabel">
             Project Two
           </p>
+        </div>
       </div>
 
-      <div id="project3">
-        <img class="project-thumbnail" src="assets/images/project3.jpeg">
-        <p class="projectlabel" id="project3">
+      <div class="row">
+        <div class = "col-sm-12 col-med-6 col-lg-4 col-xl-3"id="project3">
+          <img class="project-thumbnail" src="assets/images/project3.jpeg">
+          <p class="projectlabel" id="project3">
             Project Three
           </p>
-      </div>
+        </div>
 
-      <div id="project4">
-        <img class="project-thumbnail" src="assets/images/project4.jpeg">
-        <p class="projectlabel" id="project4">
+        <div class = "col-sm-12 col-med-6 col-lg-4 col-xl-3" id="project4">
+          <img class="project-thumbnail" src="assets/images/project4.jpeg">
+          <p class="projectlabel" id="project4">
             Project Four
           </p>
+        </div>
       </div>
 
       <div id="project5">
         <img class="project-thumbnail" src="assets/images/project5.jpeg">
         <p class="projectlabel" id="project5">
-            Project Five
-          </p>
+          Project Five
+        </p>
       </div>
 
     </div>
